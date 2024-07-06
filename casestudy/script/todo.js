@@ -57,6 +57,21 @@ function val(c){
 }
 function displaymsg(){
     let promiseFn= new Promise(function(resolve,reject){
-        if(count==5)
+        if(count==5){
+            resolve("Congrats!!You have completed 5 tasks")
+        }
     }
 }
+promiseFn.then(function (i) {
+        alert(i)
+    })
+}
+//logout
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('f').addEventListener('click', function() {
+        if (confirm('Are you sure you want to logout?')) {
+            window.location.href = 'index.html'; 
+        } else {
+        }
+    });
+});
